@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cosmetic</title> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<style>
+	*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url('images/l.jpg') ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}	
+.search-box{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+.search-box:hover > .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+.search-btn{
+	color: black;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #bf55ec;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-txt{
+	border:none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0px;
+	color: purple;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 0px;
+}
+
+.ALAR{
+	height: 70px;
+	width: auto;
+	float: left;
+	margin-top: 0px;
+}
+.row{
+	max-width: 2000px;
+	margin: 0 auto;
+}
+.main-nav{
+	float: right;
+	margin-top: 40px;
+	margin-right: 40px;
+
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 20px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+
+.main-nav li a:hover{
+	border-bottom: 2px solid #bf55ec;
+}
+
+.main-content-header{
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+}
+
+h1{
+	color: #ffffff;
+	font-size: 250%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 70px ;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2;
+5
+}
+.btn-full{
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 15px;
+	border: 1px solid #bf55ec;
+}
+
+.btn-full:hover{
+	background-color: #ffffff;
+}
+.btn-nav{
+	background-color: transparent;
+	color: #ffffff;
+	margin-right: 15px;
+	border: 1px solid #ffffff;
+}
+
+.btn-nav:hover{
+	background-color: #bf55ec;
+}
+
+.colorchange{
+	animation: colorchangethapa 1s infinite;
+
+}
+
+@keyframes colorchangethapa{
+	0%{color: red;}
+	25%{color:#bf55ec; ;}
+	50%{ color: white; }
+	100%{ color:#bf55ec;   }
+}
+.mobile-icon{display: none;}
+/*//////// Dimensionet ////////*/
+
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width:100%;
+		padding: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+
+}
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%;}
+
+	.main-nav{display: none;}
+
+	.mobile-icon{display: inline-block;
+		color: #fff ;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+
+}
+
+
+
+
+
+
+</style>
+<body>
+	
+	<header>
+		<nav>
+		<div class="row">
+			<img src="images/ALAR.jpg" class="ALAR" >		
+		<ul class="main-nav">
+                    <li><a href="index.html">Ballina</a></li>
+					<li><a href="fondatinat.html">Fondatinat</a></li>
+					<li><a href="maskara.html">Maskarat</a></li>
+					<li><a href="paletat.html">Paletat</a></li>
+					<li><a href="buzkuqet.html">Buzkuqet</a></li>
+					<li><a href="penelet.html">Penelet</a></li>
+					<li><a href="login.html">Logohu</a></li>
+		</ul>
+				
+		</div>
+		</nav>
+		<div class="search-box">
+			<input class="search-txt" type="text" name="" placeholder="Type to search">
+			<a class="search-btn" href="#">
+				<i class="fas fa-search"></i></a>
+		</div>
+		<div class="main-content-header">
+		    <h1>SMART AND FLEXIBLE <span class="colorchange">SOLUTIONS.</span><br></h1></a>
+		    <a href="sellma.html" class="btn btn-full">watch video</a>
+		    <a href="contact us.html" class="btn btn-nav">contact us</a>
+		</div>
+	</header>
+
+	
+
+</body>
+</html>

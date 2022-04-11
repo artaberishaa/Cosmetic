@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login and Registration Form Design</title>
+  <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <meta charset="utf-8"> 
+
+
+</head>
+<style>
+  body{
+
+  background-image:  url("images/a.png") ;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  height: 80vh;
+
+
+}
+.loginbox{
+  width: 320px;
+  height: 420px;
+  background: #4B0082;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px) ;
+
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+
+}
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]{
+  border:none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.loginbox input[type="button"]{
+  border:none;
+  outline: none;
+  height: 40px;
+  background: #fff;
+  color: #4B0082;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.loginbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.loginbox a:hover{
+  color: #ffc107;
+}
+.row{
+  max-width: 1190px;
+  margin: 0 auto;
+}
+.main-nav{
+  float: right;
+  margin-top: 40px;
+}
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 30px;
+}
+.main-nav li a{
+  padding: 5px 0;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+
+.main-nav li a:hover{
+  border-bottom: 2px solid #bf55ec;
+}
+  </style>
+<body>
+    <div class="loginbox">
+      <img src="images/avatar.png" class="avatar">
+      <h2>Login</h2>
+            <form id="form_id" method="post" action="index.html" onsubmit="validate();" name="myform">
+           <p>Username</p>
+            <input type="text"placeholder="Enter Username" name="username" id="username" />
+            <br><br>
+            <label>
+        <p>Password</p>
+        <input type="password" name="" placeholder="Enter Password" id="password">
+        <input type="button" value="Login" id="submit">
+        <a href="@">Lost your password?</a><br>
+        <a href="@">Don't have an account?</a>
+      </form>
+    </div>
+    <ul class="main-nav ">
+                    <li><a href="index.html">Ballina</a></li>
+          <li><a href="fondatinat.html">Fondatinat</a></li>
+          <li><a href="maskara.html">Maskarat</a></li>
+          <li><a href="paletat.html">Paletat</a></li>
+          <li><a href="buzkuqet.html">Buzkuqet</a></li>
+          <li><a href="penelet.html">Penelet</a></li>
+          <li><a href="login.html">Logohu</a></li>
+        </ul>
+<script language = "JavaScript">
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == null || username == "") {
+                alert("Ju lutem shkruani username.");
+                return false;
+            }
+            if (password == null || password == "") {
+                alert("Ju lutem shkruani paswordin.");
+                return false;
+            }
+            alert('Mire se erdhet!!');
+            //return true;
+            
+        }
+</script>
+</body>
+</html>

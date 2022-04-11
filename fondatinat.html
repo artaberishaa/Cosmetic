@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.ALAR{
+	height: 70px;
+	width: auto;
+	float: left;
+	margin-top: 0px;
+}
+body{
+	background-color: #ffffff;
+	font-size: 20px;
+	overflow-x: hidden;
+	color: black;
+	font-family: 'Flamenco', cursive;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8)), url('images/s.jpg') ;
+	height: 80vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}	
+
+.row{
+	max-width: 2000px;
+	margin: 0 auto;
+}
+.main-nav{
+	float: right;
+	margin-top: 40px;
+	margin-right: 40px;
+
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 20px;
+}
+.main-nav li a{
+	padding: 5px 0;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+
+.product{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 50px;
+}
+.product_selection_title{
+	float: left;
+	width: 100%;
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+}
+.product_one{
+	float: left;
+	width: 280px;
+	height: auto;
+	border-radius: 7px;
+	background-color: white;
+	padding-bottom: 15px;
+	border-bottom: 2px solid darkgray;
+	border-left: 1px solid darkgray;
+	border-right: 1px solid darkgray;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+.product_two{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_three{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_four{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_five{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_six{
+
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_seven{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_eight{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_nine{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_11{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_12{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_13{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_14{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_15{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.product_img{
+	width: 280px;
+	float: left;
+	border: 2px solid;
+	border-radius: 7px;
+	overflow: hidden;
+}
+.product_img img{
+	width: 100%;
+
+}
+.product_text{
+	width: 280px;
+	float: left;
+	margin-top: 10px;
+	padding-left: 10px;
+
+}
+.product_text h3 i{
+	font-weight: normal;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.star_rating{
+	float: left;
+	width: 280px;
+	margin-top: 10px;
+}
+.star_rating img{
+	width: 21px;
+	float: left;
+	margin-right: 5px;
+
+}
+.product_desc{
+	width: 280px;
+	float: left;
+	font-size: 20px;
+	margin-top: 5px;
+}
+.product_price{
+	width: 280px;
+	float: left;
+	margin-top: 10px;
+}
+.price{
+	float: left;
+	font-size: 23px;
+	font-weight: bold;
+}
+.button{
+	float: right;
+	padding: 10px;
+	background-color: #f3e5ab;
+	border-radius: 10px;
+	color: #3B170B;
+
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+.main-nav li a:hover{
+	border-bottom: 3px solid white;
+}
+
+.main-content-header{
+	/*width: 1160px;*/
+	position: absolute;
+	/*border: 5px solid red;*/
+	top: 90%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+}
+.colorchange{
+	animation: colorchangethapa 1s infinite;
+
+}
+h1{
+	color: #ffffff;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+@keyframes colorchangethapa{
+	0%{color: black;}
+	25%{color:#bf55ec; ;}
+	50%{ color: white; }
+	100%{ color:#bf55ec;   }
+}
+.mobile-icon{display: none;}
+/*//////// Responsive queries ////////*/
+
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width:100%;
+		padding: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 998px){
+	h1{font-size: 200%;}
+
+}
+@media only screen and (max-width: 768px){
+	h1{font-size: 180%;}
+
+	.main-nav{display: none;}
+
+	.mobile-icon{display: inline-block;
+		color: #fff ;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+	.main-nav{float: left;}
+
+	.main-nav li{
+		display: block;
+		margin-top: 10px;
+	}
+
+}
+
+
+
+	@media only screen and (max-width: 480px){
+		.btn-full{
+			margin-bottom: 20px;
+		}
+		
+		h1{font-size: 160%;}
+
+}
+.korniza{
+	margin-left: 17%;
+	margin-right: 15%;
+}
+
+
+</style>
+<body>
+	
+	<header>
+		<nav>
+		<div class="row">
+			<img src="images/ALAR.jpg" class="ALAR" >		
+		<ul class="main-nav">
+                    <li><a href="index.html">Ballina</a></li>
+					<li><a href="fondatinat.html">Fondatinat</a></li>
+					<li><a href="maskara.html">Maskarat</a></li>
+					<li><a href="paletat.html">Paletat</a></li>
+					<li><a href="buzkuqet.html">Buzkuqet</a></li>
+					<li><a href="penelet.html">Penelet</a></li>
+					<li><a href="login.html">Logohu</a></li>
+		</ul>
+				
+		</div>
+		</nav>
+				<div class="main-content-header">
+			 <h1><span class="colorchange">NATURALS.</span><br></h1></a>
+	    </div>
+	</header>
+
+
+
+	<div class="product">
+		<div class="container">
+
+<div class="korniza">
+				<div class="product_one product_two">
+				<div class="product_img">
+					<img src="images/s2.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Sherk <i>by HB</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>HUDA BEAUTY.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$16.40
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+
+						<div class="product_one product_two">
+				<div class="product_img">
+					<img src="images/s3.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Sherk <i>by Loreal</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>TRUE MATCH.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$5.40
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+
+						<div class="product_one product_three">
+				<div class="product_img">
+					<img src="images/s4.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Kontura <i>by Nude</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>Kontura 3 ngjyrshe.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$21.20
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+</div>
+				
+<div class="korniza">
+						<div class="product_one product_six">
+				<div class="product_img">
+					<img src="images/s7.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Kontura <i>by Master</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>KONTUR 2 NGJYRSHE.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$4.44
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+
+						<div class="product_one product_seven">
+				<div class="product_img">
+					<img src="images/s8.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Kontur <i>by CoCo</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>COCO KONTURA.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$6.90
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+						<div class="product_one product_eight">
+				<div class="product_img">
+					<img src="images/s9.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Brusha <i>by Nudes</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>SET BRUSHASH.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$13.90
+				    </div>
+				    <div class="button">				   
+				     <a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+</div>
+		
+<div class="korniza">
+				<div class="product_one product_11">
+				<div class="product_img">
+					<img src="images/s12.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Sherk <i>by Milani</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>Krem dhe sherk 2in1.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$9.00
+				    </div>
+				      <div class="button">
+		                <a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+				<div class="product_one product_12">
+				<div class="product_img">
+					<img src="images/s13.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Brusha <i>by Cont</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>Brusha per kontura.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$5.70
+				    </div>
+				      <div class="button">
+		                <a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+				<div class="product_one product_13">
+				<div class="product_img">
+					<img src="images/s14.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Highlight <i>by Melboco</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>HIGHLIGHT I RI.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$7.90
+				    </div>
+				      <div class="button">
+		                <a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+</div>
+<div class="korniza">
+				<div class="product_one product_two">
+				<div class="product_img">
+					<img src="images/s2.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Sherk <i>by HB</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>HUDA BEAUTY.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$16.40
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+
+						<div class="product_one product_two">
+				<div class="product_img">
+					<img src="images/s3.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Sherk <i>by Loreal</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>TRUE MATCH.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$5.40
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+
+						<div class="product_one product_three">
+				<div class="product_img">
+					<img src="images/s4.jpg">
+				</div>
+				<div class="product_text">
+					<h3>Kontura <i>by Nude</i></h3>
+				</div>
+				<div class="star_rating">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+					<img src="images/st.png">
+				</div>
+				<div class="product_desc">
+					<b>Kontura 3 ngjyrshe.</b>
+				</div>
+				<div class="product_price">
+					<div class="price">
+					$21.20
+				    </div>
+				    <div class="button">
+				    	<a href="login.html">Bye it now</a>
+				    </div>
+			    </div>
+			</div>
+</div>
+	
+
+</body>
+
+
+</body>
+</html>
